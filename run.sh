@@ -1,2 +1,6 @@
+npm install -g pm2
+
 npm run build
-nohup npm run start -- --port 3000 --hostname 0.0.0.0 > next.log 2>&1 &
+pm2 start npm --name stock-sense -- run start -- --port 3000 --hostname 0.0.0.0
+pm2 save
+pm2 startup
