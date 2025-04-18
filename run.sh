@@ -1,4 +1,4 @@
-npm install -g pm2
+sudo npm install -g pm2
 
 npm run build
 pm2 start npm --name stock-sense -- run start -- --port 3000 --hostname 0.0.0.0
